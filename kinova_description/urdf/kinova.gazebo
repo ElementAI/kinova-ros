@@ -11,6 +11,7 @@
         <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
         <legacyModeNS>true</legacyModeNS>
       </plugin>
+      <static>true</static>
     </gazebo>
 
 </xacro:macro>
