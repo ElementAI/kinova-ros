@@ -19,10 +19,14 @@
 
   <xacro:include filename="$(find kinova_description)/urdf/j2n6s300.xacro"/>
 
+  <xacro:include filename="$(find kinova_description)/urdf/j2n6s300.xacro"/>
+
   <link name="root"/>
 
   <xacro:property name="robot_root" value="root" />
 
   <xacro:j2n6s300  base_parent="${robot_root}"/>
+
+  <xacro:gazebo_world_link />
 
 </robot>

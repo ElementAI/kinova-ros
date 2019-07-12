@@ -25,4 +25,6 @@
 
   <xacro:m1n4s200  base_parent="${robot_root}"/>
 
+  <xacro:gazebo_world_link />
+
 </robot>

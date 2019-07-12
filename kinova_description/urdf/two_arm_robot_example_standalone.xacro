@@ -19,22 +19,7 @@
 
   <xacro:include filename="$(find kinova_description)/urdf/j2n6s300.xacro"/>
 
-  <link name="root">
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <box size = "0 0 0"/>
-      </geometry>
-
-    </visual>
-
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <box size = "0 0 0"/>
-      </geometry>
-    </collision>
-  </link>
+  <link name="root" />
 
 	<link name="left_arm_mount">
   </link>
@@ -57,5 +42,7 @@
   <xacro:j2n6s300  base_parent="left_arm_mount" prefix="left"/>
 
 	<xacro:j2n6s300  base_parent="right_arm_mount" prefix="right"/>
+
+  <xacro:gazebo_world_link />
 
 </robot>
